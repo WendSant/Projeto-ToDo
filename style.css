@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    outline: 0;
+}
+
+
+body {
+    height: 100vh;
+    /* background-color: rgb(113, 235, 214); */
+    /* background-image: linear-gradient(
+        135deg,
+        rgb(63, 104, 97),
+        rgb(113, 235, 214)
+    );
+    background-size: cover;
+    position: relative; */
+    background: rgb(2,0,36);
+background-image: linear-gradient(to right, rgba(2,0,36,1) 0%, rgba(9,121,88,1) 35%, rgba(0,212,255,1) );
+
+/* CASO QUEIRA ATIVAR O MODO GERSON TA AE */
+/* background: url(./assets/img02.jpg) no-repeat;
+background-size: cover; */
+
+
+
+    
+}
+
+#centralizar {
+    background-color: blue; 
+    width: 100px;
+    height: 100px; 
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    border-radius: 5px;
+    border: 2px solid rgb(255, 250, 250);
+    position: absolute;
+    background-color: rgb(224, 224, 224);
+    /* top: 50%; */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Noto Sans";
+    width: 45%;
+    min-width: 300px;
+    padding: 30px 20px;
+    box-shadow: 0 15px 30px rgb(102, 148, 140);
+    display: inline-block;
+    margin-top: 15%;
+    
+    
+}
+
+input {
+    font-family: 'Poppins', sans;
+    width: 70%;
+    height: 2.5rem;
+    padding: 5px;
+    font-size: 0.81rem;
+    position: relative;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: cornsilk;
+}
+
+.buttonAdd2 {
+    display: none;
+
+}
+.icon-minus:before {
+    content: "\ea0b";
+  }
+.buttonAdd {
+    position: relative;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: rgb(86, 138, 129);
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    height: 2.81rem;
+    width: 20%;
+    
+}
+
+.pos {
+    position: static;
+}
+
+.buttonRemove2 {
+    display: none;
+    position: relative;
+        border-radius: 0.5rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        background-color: rgb(170, 51, 46);
+        border: none;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        height: 2.81rem;
+        width: 20%;
+    
+}
+
+.buttonRemove {
+    position: relative;
+    border-radius: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: rgb(170, 51, 46);
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    height: 2.81rem;
+    width: 20%;
+}
+
+.listelement {
+    
+    padding: 15px;
+}
+.addelement {
+    display: flex;
+    align-content: space-between;
+}
+
+.marg {
+    margin-left: 1rem;
+}
+
+li {
+    font-size: 1.1rem;
+    background-color: rgb(206, 206, 206);
+    margin-bottom: 0.81rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    max-width: 100%;
+    word-wrap: break-word;
+    display: block;
+    
+}
+
+li span {
+    position: absolute;
+    right: 3rem;
+    color: #e92929;
+    text-align: left;
+    cursor: pointer;
+}
+
+@media (max-width: 910px) {
+
+    .buttonAdd {
+        position: relative;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        background-color: rgb(86, 138, 129);
+        border: none;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        height: 2.81rem;
+        width: 20%;
+        display: none;
+    }
+    .buttonAdd2{
+        position: relative;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        background-color: rgb(86, 138, 129);
+        border: none;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        height: 2.81rem;
+        width: 20%;
+        display: block;
+    }
+    .buttonRemove {
+        position: relative;
+        border-radius: 0.5rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        background-color: rgb(170, 51, 46);
+        border: none;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        height: 2.81rem;
+        width: 20%;
+        display: none;
+    }
+
+    .buttonRemove2 {
+        display: block;
+
+    }
+
+}
